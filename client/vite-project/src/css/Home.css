@@ -1,0 +1,33 @@
+.home-page{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient( rgb(137,197,236),rgb(152,152,239),rgb(117,208,220));
+}
+
+.home-page h1{
+    font-size:80px;
+    margin-bottom:20px;
+}
+
+.home-page p{
+    font-size:24px;
+    margin-bottom:40px;
+    color:#333;
+}
+
+.home-page button{
+    padding:15px 35px;
+    border:none;
+    border-radius:15px;
+    font-size:18px;
+    font-weight:bold;
+    background:white;
+    transition:0.3s;
+}
+
+.home-page button:hover{
+    transform:translateY(-3px);
+}

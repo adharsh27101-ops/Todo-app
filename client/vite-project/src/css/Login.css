@@ -1,0 +1,52 @@
+
+
+.login-page{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(153, 206, 244),rgb(79, 217, 255),rgb(228, 228, 255))
+}
+h1{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.loginbox{
+    width: 400px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.2);   
+}
+
+
+
+.logem,.logpass,.signem,.signame,.sigpass{
+    width: 100%;
+    margin-bottom: 40px !important;
+}
+
+.logbtn,.sigbtn{
+    height: 45px;
+    border-radius: 12px !important;
+    margin-left: 140px !important;
+    margin-bottom: 30px !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    background:  linear-gradient(rgb(153, 206, 244),rgb(79, 217, 255),rgb(228, 228, 255)) !important;
+}
+
+
+.dont,.alr{
+    text-align: center;
+    font-size: 15px;
+    color: gray;
+}
+
+.change{
+    color: rgb(0,100,255);
+    font-weight: bold;
+    cursor: pointer;
+}
+
