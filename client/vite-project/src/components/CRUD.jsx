@@ -45,7 +45,7 @@ async function getTodos(){
   const token = localStorage.getItem("token");
 
   const res = await axios.get(
-    "http://localhost:5000/api/todos",
+    "https://todo-app-q5qc.onrender.com/api/todos",
     {
       headers:{
         Authorization: `Bearer ${token}`
@@ -66,7 +66,7 @@ async function addTodo(){
     image: image ? URL.createObjectURL(image) : ""
    }
 
-   await axios.post("http://localhost:5000/api/todos",newTodo)
+   await axios.post("https://todo-app-q5qc.onrender.com/api/todos",newTodo)
    setText("")
    getTodos();
    setimage(null);
@@ -74,7 +74,7 @@ async function addTodo(){
 
 
 async function deleteTodo(id){
-  await axios.delete(`http://localhost:5000/api/todos/${id}`)
+  await axios.delete(`https://todo-app-q5qc.onrender.com/api/todos/${id}`)
   getTodos()
 }
 
@@ -88,7 +88,7 @@ function editTodo(todo) {
     const updatedTodo={
       text: text,
     };
-    await axios.put(`http://localhost:5000/api/todos/${editId}`,updatedTodo);
+    await axios.put(`https://todo-app-q5qc.onrender.com/api/todos/${editId}`,updatedTodo);
     setText("");
     setEditId(null);
     getTodos();
