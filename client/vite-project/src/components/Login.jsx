@@ -42,6 +42,11 @@ async function handleLogin(){
 
       async function handleSignup(){
 
+  if (!email.includes("@gmail.com")) {
+  alert("Please enter a valid Gmail address");
+  return;
+}
+
   if(!name || !email || !password || !confirmPassword){
     alert("Please fill all fields");
     return;
