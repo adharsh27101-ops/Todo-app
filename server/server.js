@@ -13,6 +13,7 @@ app.use(
     cors(
         {
             origin:process.env.FRONTEND_URL
+            
         }
     )
 )
