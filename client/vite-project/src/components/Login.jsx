@@ -23,7 +23,7 @@ async function handleLogin(){
 
   try{
     const res = await axios.post(
-      "https://todo-app-q5qc.onrender.com/api/auth/login",
+      "http://localhost:5000/api/auth/login",
       {
         email,
         password
@@ -54,7 +54,7 @@ async function handleLogin(){
 
   try{
     const res = await axios.post(
-      "https://todo-app-q5qc.onrender.com/api/auth/signup",
+      "http://localhost:5000/api/auth/signup",
       {
         name,
         email,
